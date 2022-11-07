@@ -1,0 +1,6 @@
+filetype *.png,*.jpg,*.bmp,*.pcx,*.tga
+        \ {Image file}
+        \ ~/tools/sviewgl,
+        \ %f  &,
+
+colorscheme nord
