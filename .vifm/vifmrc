@@ -3,4 +3,4 @@ filetype *.png,*.jpg,*.bmp,*.pcx,*.tga
         \ ~/tools/sviewgl,
         \ %f  &,
 
-colorscheme nord
+colorscheme gruvbox
