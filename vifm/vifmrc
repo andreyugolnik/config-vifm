@@ -71,7 +71,7 @@ colorscheme gruvbox
 " Format for displaying time in file list. For example:
 " TIME_STAMP_FORMAT=%m/%d-%H:%M
 " See man date or man strftime for details.
-set timefmt='%Y/%m/%d %H:%M'
+set timefmt='%d.%m.%Y %H:%M'
 
 " Show list of matches on tab completion in command-line mode
 set wildmenu
@@ -101,7 +101,10 @@ set scrolloff=4
 set slowfs=curlftpfs
 
 " Set custom status line look
-set statusline="  Hint: %z%= %A %10u:%-7g %15s %20d  "
+" set statusline="  Hint: %z%= %A %10u:%-7g %15s %20d  "
+highlight User1 ctermbg=none ctermfg=yellow
+highlight User2 ctermbg=none ctermfg=white
+set statusline="%1* %a %2* %A %1* %u:%g %2* %d %1* %E "
 
 " ------------------------------------------------------------------------------
 " Bookmarks
