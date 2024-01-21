@@ -431,9 +431,14 @@ nnoremap <space> t<down>
 " show/hide dotfiles
 nnoremap . za
 
+nnoremap ,f :find<space>
+
 " ------------------------------------------------------------------------------
 " Various customization examples
 " ------------------------------------------------------------------------------
+
+set findprg='fd -HI %p %s'
+" set findprg='find %s %a -print -prune'
 
 " Use ag (the silver searcher) instead of grep
 " set grepprg='ag --line-numbers %i %a %s'
