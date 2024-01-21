@@ -466,3 +466,4 @@ set findprg='fd -HI %p %s'
 " ------------------------------------------------------------------------------
 
 " https://github.com/cirala/vifm_devicons
+source $VIFM/scripts/vifm_devicons/favicons.vifm
