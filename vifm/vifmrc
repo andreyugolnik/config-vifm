@@ -143,6 +143,12 @@ command! make !!make %a
 command! mkcd :mkdir %a | cd %a
 command! reload :write | restart full
 
+command! FzfFind : set noquickview
+    \| let $FZF_PICK = term('fd %a | fzf 2>/dev/tty')
+    \| if $FZF_PICK != ''
+    \|     execute 'goto' fnameescape($FZF_PICK)
+    \| endif
+
 " ------------------------------------------------------------------------------
 " File types association
 " ------------------------------------------------------------------------------
@@ -431,7 +437,7 @@ nnoremap <space> t<down>
 " show/hide dotfiles
 nnoremap . za
 
-nnoremap ,f :find<space>
+nnoremap ,f :FzfFind<space>
 
 " ------------------------------------------------------------------------------
 " Various customization examples
