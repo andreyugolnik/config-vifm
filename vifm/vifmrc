@@ -149,6 +149,12 @@ command! FzfFind : set noquickview
     \|     execute 'goto' fnameescape($FZF_PICK)
     \| endif
 
+command! FzfTmux : set noquickview
+    \| let $FZF_PICK = system('fd %a | fzf-tmux -p 80%% 2>/dev/tty')
+    \| if $FZF_PICK != ''
+    \|     execute 'goto' fnameescape($FZF_PICK)
+    \| endif
+
 " ------------------------------------------------------------------------------
 " File types association
 " ------------------------------------------------------------------------------
@@ -437,7 +443,7 @@ nnoremap <space> t<down>
 " show/hide dotfiles
 nnoremap . za
 
-nnoremap ,f :FzfFind<space>
+nnoremap ,f :FzfTmux<cr>
 
 " ------------------------------------------------------------------------------
 " Various customization examples
