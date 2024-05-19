@@ -400,6 +400,9 @@ nnoremap yd :!printf %d | pbcopy<cr>
 " Yank current file path into the clipboard (escape spaces)
 nnoremap yf :!printf %f:p:gs? ?\\ ? | pbcopy<cr>
 
+" Yank current file name into the clipboard
+nnoremap yn :!printf %c | pbcopy<cr>
+
 " View preview in Quick Look
 " nnoremap <space> :!qlmanage -p %f > /dev/null 2>&1<cr>
 
