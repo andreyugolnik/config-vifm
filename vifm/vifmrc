@@ -145,13 +145,13 @@ command! mkcd :mkdir %a | cd %a
 command! reload :write | restart full
 
 command! FzfFind : set noquickview
-    \| let $FZF_PICK = term('fd %a | fzf 2>/dev/tty')
+    \| let $FZF_PICK = term('fd -IH %a | fzf 2>/dev/tty')
     \| if $FZF_PICK != ''
     \|     execute 'goto' fnameescape($FZF_PICK)
     \| endif
 
 command! FzfTmux : set noquickview
-    \| let $FZF_PICK = system('fd %a | fzf-tmux -p 80%% 2>/dev/tty')
+    \| let $FZF_PICK = system('fd -IH %a | fzf-tmux -p 80%% 2>/dev/tty')
     \| if $FZF_PICK != ''
     \|     execute 'goto' fnameescape($FZF_PICK)
     \| endif
