@@ -449,6 +449,9 @@ nnoremap . za
 
 nnoremap ,f :FzfTmux<cr>
 
+" Size of selected folders
+nnoremap ,z :!for d in %f ; do du -s $d; done | awk '{sum += $1} END {printf sum/1024 "M"}' %S<CR>
+
 " ------------------------------------------------------------------------------
 " Various customization examples
 " ------------------------------------------------------------------------------
