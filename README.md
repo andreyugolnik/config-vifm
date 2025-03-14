@@ -2,7 +2,7 @@
 
 Minimal, Efficient, and Practical.
 
-![Vifm](https://github.com/andreyugolnik/config-vifm/blob/master/vifm.png?raw=true)
+![Vifm](https://github.com/raybits/config-vifm/blob/master/vifm.png?raw=true)
 
 ## Description
 
@@ -19,7 +19,7 @@ This repository contains my custom Vifm configuration, designed to streamline fi
 
 1. Clone the repository:
 ```sh
-git clone https://github.com/andreyugolnik/vifm-config ~/.config/vifm
+git clone https://github.com/raybits/vifm-config ~/.config/vifm
 ```
 
 2. (Optional) Install dependencies for enhanced functionality (e.g., fzf, bat, ripgrep).
