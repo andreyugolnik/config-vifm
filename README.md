@@ -2,11 +2,13 @@
 
 Minimal, Efficient, and Practical.
 
-![Vifm](https://github.com/raybits/config-vifm/blob/master/vifm.png?raw=true)
+![Vifm](https://github.com/reybits/config-vifm/blob/master/vifm.png?raw=true)
 
 ## Description
 
 This repository contains my custom Vifm configuration, designed to streamline file management while keeping things minimal and efficient. While I’m still exploring Vifm’s full potential, this setup refines several defaults to better suit my workflow.
+
+For the best experience, use it alongside my [config-tmux](https://github.com/reybits/config-tmux.git) repository.
 
 ## Features
 
@@ -19,7 +21,7 @@ This repository contains my custom Vifm configuration, designed to streamline fi
 
 1. Clone the repository:
 ```sh
-git clone https://github.com/raybits/vifm-config ~/.config/vifm
+git clone https://github.com/reybits/vifm-config ~/.config/vifm
 ```
 
 2. (Optional) Install dependencies for enhanced functionality (e.g., fzf, bat, ripgrep).
